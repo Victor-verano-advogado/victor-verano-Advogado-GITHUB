@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Victor Verano | Advocacia & Consultoria Jurídica</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" onclick="navegarPara('home')" class="logo">
+            <img src="S-logo.png" alt="Logo Dr. Victor Verano">
+            Dr. Victor Verano <span>| Advocacia</span>
+        </a>
+        <nav>
+            <a href="#" onclick="navegarPara('home')">Início</a>
+            <a href="#" onclick="navegarPara('feedbacks')">Feedbacks</a>
+            <a href="#atuacao" onclick="navegarPara('home')">Áreas de Atuação</a>
+            <a href="#contato" onclick="navegarPara('home')">Atendimento Online</a>
+        </nav>
+    </header>
+
+    <!-- SUBPÁGINA: INÍCIO -->
+    <main id="home" class="subpagina ativa">
+        <section class="hero">
+            <div class="badge-online">
+                <span class="dot"></span> Atendimento Jurídico 100% Online
+            </div>
+            <h1>Advocacia e Consultoria Jurídica sob medida para defender seus direitos.</h1>
+            <p>Soluções jurídicas dinâmicas, transparentes e ágeis. Atendimento digital com total comodidade e segurança de onde você estiver.</p>
+            <a href="https://wa.me/556399144077" class="cta-button" target="_blank">Falar no WhatsApp</a>
+        </section>
+
+        <section class="areas" id="atuacao">
+            <div class="card">
+                <h3>Advocacia e Consultoria Jurídica</h3>
+                <p>Assessoria jurídica preventiva, análise e elaboração de contratos, proteção patrimonial e suporte a negócios.</p>
+            </div>
+        </section>
+
+        <section class="contact-box" id="contato">
+            <h2>Precisa de orientação jurídica?</h2>
+
+            <div class="photo-card">
+                <img src="Pfoto.png" alt="Dr. Victor Verano">
+            </div>
+
+            <p>Agende uma consulta online diretamente com o Dr. Victor Verano pelo WhatsApp.</p>
+            <a href="https://wa.me/556399144077" class="cta-button" target="_blank">Iniciar Atendimento pelo WhatsApp</a>
+        </section>
+    </main>
+
+    <!-- SUBPÁGINA: FEEDBACKS -->
+    <section id="feedbacks" class="subpagina feedback-section">
+        <h2>Avaliações de Clientes</h2>
+        <p class="subtitle">Veja a opinião de quem já foi atendido pelo Dr. Victor Verano ou deixe seu comentário.</p>
+
+        <form class="feedback-form" id="formFeedback">
+            <div class="form-group">
+                <label for="nome">Seu Nome / Empresa:</label>
+                <input type="text" id="nome" required placeholder="Ex: Maria Silva">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Seu Depoimento ou Avaliação:</label>
+                <textarea id="mensagem" rows="4" required placeholder="Escreva aqui como foi seu atendimento..."></textarea>
+            </div>
+            <button type="submit" class="cta-button">Enviar Feedback</button>
+        </form>
+
+        <div class="feedback-list" id="listaFeedbacks">
+            <!-- Depoimentos inseridos dinamicamente -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dr. Victor Verano - Advocacia & Consultoria Jurídica. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
